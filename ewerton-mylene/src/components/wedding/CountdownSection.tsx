@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Reveal } from "@/components/ui/Reveal";
 
 interface TimeLeft {
   days: number;
@@ -16,7 +17,7 @@ const CountdownSection = () => {
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2025-08-08T00:00:00").getTime();
+    const weddingDate = new Date("2026-08-08T15:00:00").getTime();
 
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
@@ -55,14 +56,14 @@ const CountdownSection = () => {
         <div className="flex justify-center items-center gap-4 md:gap-8">
           {timeBlocks.map((block, index) => (
             <div key={block.label} className="flex items-center gap-4 md:gap-8">
-              <div className="flex flex-col items-center">
+              <Reveal variant="zoom-in" delay={index * 0.1} className="flex flex-col items-center">
                 <div className="countdown-digit w-16 h-16 md:w-24 md:h-24 flex items-center justify-center text-2xl md:text-4xl font-display mb-2">
                   {String(block.value).padStart(2, "0")}
                 </div>
                 <span className="font-body text-xs uppercase tracking-wider opacity-70">
                   {block.label}
                 </span>
-              </div>
+              </Reveal>
               {index < timeBlocks.length - 1 && (
                 <span className="text-2xl md:text-4xl font-light text-neon-blue opacity-50 -mt-6">
                   :

@@ -57,21 +57,23 @@ const Navbar = () => {
         : "bg-transparent"
         }`}
     >
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <a
-            href="/"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick("/#inicio");
-            }}
-            className="font-display text-xl md:text-3xl tracking-wider hover:text-neon-blue transition-colors duration-300"
-          >
-            E<span className="text-neon-blue">&</span>M
-          </a>
+      <div className="w-full px-6 md:px-12">
+        <div className="flex items-center h-16 md:h-20">
+          {/* Logo (Left side) */}
+          <div className="flex-1 flex justify-start">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick("/#inicio");
+              }}
+              className="font-display text-xl md:text-3xl tracking-wider hover:text-neon-blue transition-colors duration-300"
+            >
+              E<span className="text-neon-blue">&</span>M
+            </a>
+          </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation (Center) */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
@@ -88,14 +90,16 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-foreground hover:text-neon-blue transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Menu Button / Placeholder (Right side) */}
+          <div className="flex-1 flex justify-end">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden p-2 text-foreground hover:text-neon-blue transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
