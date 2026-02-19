@@ -33,7 +33,7 @@ const HeroSection = () => {
           </Reveal>
 
           <Reveal variant="elastic-text" delay={0.4} width="100%">
-            <h1 className="font-display text-4xl md:text-7xl lg:text-8xl font-light text-[#3A4A40] mb-4 tracking-wide drop-shadow-lg text-center">
+            <h1 className="font-display text-4xl md:text-7xl lg:text-7xl font-light text-[#3A4A40] mb-4 tracking-wide drop-shadow-lg text-center">
               Ewerton{" "}
               <span className="text-[#3A4A40]">&</span>{" "}
               Mylene
