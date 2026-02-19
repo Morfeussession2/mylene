@@ -1,7 +1,5 @@
 import story1 from "@/assets/imagem1.jpeg";
-import story2 from "@/assets/story-2.jpg";
-import story3 from "@/assets/story-3.jpg";
-import story4 from "@/assets/story-4.jpg";
+
 import { Reveal } from "@/components/ui/Reveal";
 
 const timelineEvents = [
