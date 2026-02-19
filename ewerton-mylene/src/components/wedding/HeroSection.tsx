@@ -42,11 +42,7 @@ const HeroSection = () => {
 
           <div className="w-24 h-px bg-[#3A4A40] mx-auto my-8" />
 
-          <Reveal variant="fade-up" delay={0.6} width="100%">
-            <p className="font-body text-xl md:text-2xl lg:text-3xl text-[#3A4A40] mb-12 drop-shadow-md">
-              08 de agosto de 2026
-            </p>
-          </Reveal>
+
         </div>
       </div>
 
