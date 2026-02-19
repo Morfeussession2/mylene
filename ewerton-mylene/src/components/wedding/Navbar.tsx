@@ -67,9 +67,9 @@ const Navbar = () => {
                 e.preventDefault();
                 handleNavClick("/#inicio");
               }}
-              className="font-display text-xl md:text-3xl tracking-wider hover:text-neon-blue transition-colors duration-300"
+              className="hover:text-neon-blue transition-colors duration-300 pt-2"
             >
-              <img src="/monograma.png" alt="Logo" className="w-20 h-20" />
+              <img src="/monograma.png" alt="Logo" className="w-14 h-14 md:w-20 md:h-20 object-contain" />
             </a>
           </div>
 
