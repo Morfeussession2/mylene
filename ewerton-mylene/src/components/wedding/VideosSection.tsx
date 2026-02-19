@@ -40,7 +40,7 @@ const VideosSection = () => {
           <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
             Nossa história em movimento
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-light">
             Vídeos
           </h2>
           <div className="w-16 h-px bg-neon-blue mx-auto mt-6" />
@@ -68,7 +68,7 @@ const VideosSection = () => {
                     </span>
                   </div>
                 )}
-                
+
                 {/* Play Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-surface-dark/30 group-hover:bg-surface-dark/50 transition-colors duration-300">
                   <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center border-2 border-primary-foreground/50 group-hover:border-neon-blue group-hover:neon-glow transition-all duration-300">

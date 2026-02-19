@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Mosseta';
+  src: url('/Mosseta-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'August Script';
+  src: url('/August Script Bold Free.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -6,8 +21,10 @@
 
 @layer base {
   :root {
-    --background: 40 20% 94%; /* #F4F1EA */
-    --foreground: 140 12% 26%; /* #3A4A3F */
+    --background: 40 20% 94%;
+    /* #F4F1EA */
+    --foreground: 91 23% 38%;
+    /* #60774B */
 
     --card: 40 20% 94%;
     --card-foreground: 140 12% 26%;
@@ -15,16 +32,19 @@
     --popover: 40 20% 94%;
     --popover-foreground: 140 12% 26%;
 
-    --primary: 90 15% 42%; /* #6A7A5B Sage Green */
+    --primary: 90 15% 42%;
+    /* #6A7A5B Sage Green */
     --primary-foreground: 40 20% 94%;
 
-    --secondary: 40 30% 83%; /* #E6DBC2 Warm Beige */
+    --secondary: 40 30% 83%;
+    /* #E6DBC2 Warm Beige */
     --secondary-foreground: 140 12% 26%;
 
     --muted: 40 30% 83%;
     --muted-foreground: 140 12% 40%;
 
-    --accent: 90 20% 65%; /* #A4B494 Light Green */
+    --accent: 90 20% 65%;
+    /* #A4B494 Light Green */
     --accent-foreground: 140 12% 26%;
 
     --destructive: 0 84.2% 60.2%;
@@ -37,15 +57,17 @@
     --radius: 0.25rem;
 
     /* Custom wedding theme variables */
-    --neon-blue: 90 15% 42%; /* Replaced with Sage Green */
+    --neon-blue: 90 15% 42%;
+    /* Replaced with Sage Green */
     --neon-blue-glow: 90 15% 52%;
     --dark-overlay: 140 12% 10%;
     --surface-dark: 140 12% 26%;
     --surface-medium: 40 30% 83%;
 
     /* Typography */
-    --font-display: 'Cormorant Garamond', serif;
-    --font-body: 'Montserrat', sans-serif;
+    --font-display: 'Mosseta', serif;
+    --font-secondary: 'August Script', cursive;
+    --font-body: 'Centaur', 'liberation-sans', serif;
 
     /* Shadows & Effects */
     --glow-neon: 0 0 20px hsl(var(--neon-blue) / 0.3), 0 0 40px hsl(var(--neon-blue) / 0.1);
@@ -101,12 +123,15 @@
 
   html {
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
   }
-  
+
   html::-webkit-scrollbar {
-    display: none; /* Chrome/Safari/Opera */
+    display: none;
+    /* Chrome/Safari/Opera */
   }
 
   body {
@@ -114,7 +139,12 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
   }
 }
@@ -122,6 +152,10 @@
 @layer components {
   .font-display {
     font-family: var(--font-display);
+  }
+
+  .font-secondary {
+    font-family: var(--font-secondary);
   }
 
   .font-body {
@@ -153,12 +187,10 @@
   }
 
   .hero-overlay {
-    background: linear-gradient(
-      to bottom,
-      hsl(var(--dark-overlay) / 0.3) 0%,
-      hsl(var(--dark-overlay) / 0.5) 50%,
-      hsl(var(--dark-overlay) / 0.7) 100%
-    );
+    background: linear-gradient(to bottom,
+        hsl(var(--dark-overlay) / 0.3) 0%,
+        hsl(var(--dark-overlay) / 0.5) 50%,
+        hsl(var(--dark-overlay) / 0.7) 100%);
   }
 
   .section-fade-in {
@@ -173,13 +205,11 @@
   }
 
   .timeline-line {
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      hsl(var(--neon-blue)) 10%,
-      hsl(var(--neon-blue)) 90%,
-      transparent 100%
-    );
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        hsl(var(--neon-blue)) 10%,
+        hsl(var(--neon-blue)) 90%,
+        transparent 100%);
   }
 
   .photo-card {
@@ -209,6 +239,7 @@
       opacity: 0;
       transform: translateY(30px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -216,18 +247,24 @@
   }
 
   @keyframes pulse-neon {
-    0%, 100% {
+
+    0%,
+    100% {
       box-shadow: var(--glow-neon);
     }
+
     50% {
       box-shadow: var(--glow-neon-strong);
     }
   }
 
   @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-10px);
     }
@@ -245,9 +282,23 @@
     animation: float 3s ease-in-out infinite;
   }
 
-  .delay-100 { animation-delay: 100ms; }
-  .delay-200 { animation-delay: 200ms; }
-  .delay-300 { animation-delay: 300ms; }
-  .delay-400 { animation-delay: 400ms; }
-  .delay-500 { animation-delay: 500ms; }
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
 }

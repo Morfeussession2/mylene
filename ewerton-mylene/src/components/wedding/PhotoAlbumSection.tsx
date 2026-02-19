@@ -21,14 +21,14 @@ const PhotoAlbumSection = () => {
   );
 
   return (
-    <section id="album" className="py-20 md:py-32 bg-background">
+    <section id="album" className="py-20 md:py-32 bg-[#F7F1E7]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
+          <p className="font-body uppercase tracking-[0.3em] mb-4">
             Memórias que guardamos
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-light">
             Álbum do Casal
           </h2>
           <div className="w-16 h-px bg-neon-blue mx-auto mt-6" />

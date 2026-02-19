@@ -67,8 +67,9 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Cormorant Garamond', 'serif'],
-        body: ['Montserrat', 'sans-serif'],
+        display: ['Mosseta', 'serif'],
+        secondary: ['August Script', 'cursive'],
+        body: ['Centaur', 'EB Garamond', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

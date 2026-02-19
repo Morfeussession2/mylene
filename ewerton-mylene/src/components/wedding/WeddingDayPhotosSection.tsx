@@ -7,14 +7,14 @@ const WeddingDayPhotosSection = () => {
   const hasPhotos = false;
 
   return (
-    <section id="fotos-dia" className="py-20 md:py-32 bg-surface-medium">
+    <section id="fotos-dia" className="py-20 md:py-32 bg-[#60774B]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
+          <p className="font-body text-[#F7F1E7] uppercase tracking-[0.3em] mb-4">
             Registros do nosso dia especial
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-[#F7F1E7]">
             POV / Fotos da sua visão do dia
           </h2>
           <div className="w-16 h-px bg-neon-blue mx-auto mt-6" />

@@ -54,7 +54,7 @@ const GiftsSection = () => {
           <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
             Sua presença é nosso maior presente
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light">
+          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-light">
             Lista de Presentes
           </h2>
           <div className="w-16 h-px bg-neon-blue mx-auto mt-6 mb-8" />

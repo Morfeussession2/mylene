@@ -53,7 +53,7 @@ const Accommodation = () => {
                         <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
                             Dicas para sua estadia
                         </p>
-                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-light">
+                        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light">
                             Hospedagem e Passeios
                         </h1>
                         <div className="w-24 h-px bg-neon-blue mx-auto mt-6" />

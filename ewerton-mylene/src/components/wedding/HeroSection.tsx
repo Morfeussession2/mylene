@@ -27,13 +27,13 @@ const HeroSection = () => {
       <div style={{ transform: 'translateY(-9rem)' }} className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-in-up">
           <Reveal variant="fade-in" delay={0.2} width="100%">
-            <p className="font-body text-xs md:text-sm uppercase tracking-[0.3em] text-[#3A4A40] mb-6 drop-shadow-md">
+            <p className="font-secondary text-2xl md:text-3xl text-[#3A4A40] mb-6 drop-shadow-md">
               Celebre conosco
             </p>
           </Reveal>
 
           <Reveal variant="elastic-text" delay={0.4} width="100%">
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-[#3A4A40] mb-4 tracking-wide drop-shadow-lg">
+            <h1 className="font-display text-5xl md:text-7xl lg:text-7xl font-light text-[#3A4A40] mb-4 tracking-wide drop-shadow-lg whitespace-nowrap text-center">
               Ewerton{" "}
               <span className="text-secondary-foreground/80 text-[#3A4A40]">&</span>{" "}
               Mylene
@@ -43,7 +43,7 @@ const HeroSection = () => {
           <div className="w-24 h-px bg-[#3A4A40] mx-auto my-8" />
 
           <Reveal variant="fade-up" delay={0.6} width="100%">
-            <p className="font-display text-xl md:text-2xl lg:text-3xl text-[#3A4A40] italic mb-12 drop-shadow-md">
+            <p className="font-body text-xl md:text-2xl lg:text-3xl text-[#3A4A40] mb-12 drop-shadow-md">
               08 de agosto de 2026
             </p>
           </Reveal>

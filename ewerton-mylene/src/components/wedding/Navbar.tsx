@@ -69,7 +69,7 @@ const Navbar = () => {
               }}
               className="font-display text-xl md:text-3xl tracking-wider hover:text-neon-blue transition-colors duration-300"
             >
-              E<span className="text-neon-blue">&</span>M
+              <img src="/monograma.png" alt="Logo" className="w-20 h-20" />
             </a>
           </div>
 

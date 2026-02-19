@@ -13,14 +13,14 @@ const eventDetails = {
 
 const EventSection = () => {
   return (
-    <section id="evento" className="py-20 md:py-32 bg-surface-medium">
+    <section id="evento" className="py-20 md:py-32 bg-[#60774B]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-20">
-          <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
+        <div className="text-center mb-16 md:mb-20 ">
+          <p className="font-body text-[#F7F1E7] uppercase tracking-[0.3em] mb-4">
             Marque na agenda
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light">
+          <h2 className="font-display text-[#F7F1E7] text-5xl md:text-6xl lg:text-7xl font-light">
             O Grande Dia
           </h2>
           <div className="w-16 h-px bg-neon-blue mx-auto mt-6" />
@@ -51,9 +51,7 @@ const EventSection = () => {
                 <p className="font-body text-muted-foreground mb-1">
                   Cerimônia: {eventDetails.ceremonyTime}
                 </p>
-                <p className="font-body text-muted-foreground">
-                  Festa: {eventDetails.partyTime}
-                </p>
+
               </div>
             </Reveal>
           </div>
