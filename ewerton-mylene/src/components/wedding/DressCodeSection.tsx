@@ -17,7 +17,7 @@ const DressCodeSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="glass-card p-10 md:p-16">
             <h3 className="font-display text-3xl md:text-4xl mb-6">
-              Traje Esporte Fino
+              Traje Esporte Fino.
             </h3>
 
             <p className="font-body text-muted-foreground leading-relaxed mb-10 max-w-xl mx-auto">
