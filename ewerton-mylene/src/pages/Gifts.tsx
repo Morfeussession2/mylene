@@ -67,14 +67,14 @@ const gifts = [
   },
   {
     id: 11,
-    name: "Taxa para jogar para buquê na sua direção",
+    name: "Taxa para jogar o buquê na sua direção",
     description: "Taxa para jogar o buquê na sua direção, aumentando suas chances de ser a próxima a casar e garantindo uma noite divertida e cheia de emoção.",
     value: "R$ 180",
   },
   {
     id: 12,
     name: "So pra não dizer que não dei nada",
-    description: "So pra não dizer que não dei nada, um presente simbólico para mostrar nosso carinho e gratidão pela sua presença em nosso grande dia.",
+    description: "So pra não dizer que não dei nada, um presente simbólico para mostrar seu carinho e gratidão.",
     value: "R$ 120",
   },
 ];

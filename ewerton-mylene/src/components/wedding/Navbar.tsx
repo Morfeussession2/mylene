@@ -11,7 +11,7 @@ const navItems = [
   { label: "Dress Code", href: "/#dresscode" },
   { label: "Fotos do Dia", href: "/#fotos-dia" },
   { label: "Hospedagem e passeios", href: "/hospedagem" },
-  { label: "Lista de presentes", href: "/lista-de-presentes" },
+  { label: "Lista de presentes", href: "/#presentes" },
 ];
 
 const Navbar = () => {
@@ -105,7 +105,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md border-b border-border transition-all duration-300 ${isMobileMenuOpen
+        className={`lg:hidden absolute top-full left-0 right-0 bg-background/100 backdrop-blur-md border-b border-border transition-all duration-300 ${isMobileMenuOpen
           ? "opacity-100 translate-y-0"
           : "opacity-0 -translate-y-4 pointer-events-none"
           }`}
