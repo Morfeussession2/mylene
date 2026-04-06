@@ -4,7 +4,7 @@ import CountdownSection from "@/components/wedding/CountdownSection";
 import StorySection from "@/components/wedding/StorySection";
 import EventSection from "@/components/wedding/EventSection";
 import DressCodeSection from "@/components/wedding/DressCodeSection";
-import GiftsSection from "@/components/wedding/Gifts";
+import GiftsSection from "@/components/wedding/GiftsSection";
 import PhotoAlbumSection from "@/components/wedding/PhotoAlbumSection";
 import WeddingDayPhotosSection from "@/components/wedding/WeddingDayPhotosSection";
 import VideosSection from "@/components/wedding/VideosSection";
