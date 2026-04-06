@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { X, ZoomIn } from "lucide-react";
 import story1 from "@/assets/story-1.jpg";
+import story5 from "@/assets/story-5.jpg";
 import story2 from "@/assets/story-2.jpg";
 import story3 from "@/assets/story-3.jpg";
 import story4 from "@/assets/story-4.jpg";
@@ -12,7 +13,7 @@ const photos = [
   { id: 3, src: story2, alt: "Jantar romântico" },
   { id: 4, src: story3, alt: "O pedido" },
   { id: 5, src: story4, alt: "Noivos felizes" },
-  { id: 6, src: story1, alt: "Momentos especiais" },
+  { id: 6, src: story5, alt: "Momentos especiais" },
 ];
 
 const PhotoAlbumSection = () => {

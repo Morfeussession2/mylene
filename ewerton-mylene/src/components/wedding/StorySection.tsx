@@ -32,7 +32,7 @@ const StorySection = () => {
           {timelineEvents.map((event, index) => (
             <div
               key={event.year}
-              className={`relative flex flex-col md:flex-row items-center mb-16 md:mb-24 last:mb-0 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              className={`relative flex flex-col md:flex-row items-center mb-24 md:mb-32 last:mb-0 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
             >
               {/* Image Block */}
@@ -63,7 +63,7 @@ const StorySection = () => {
                     <h3 className="font-display text-2xl md:text-3xl mb-4">
                       {event.title}
                     </h3>
-                    <p className="font-body text-muted-foreground leading-relaxed">
+                    <p className="font-body text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
                       {event.description}
                     </p>
                   </div>
