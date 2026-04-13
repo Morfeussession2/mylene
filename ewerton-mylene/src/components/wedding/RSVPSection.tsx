@@ -43,22 +43,29 @@ const RSVPSection = () => {
         mensagem: formData.message,
       };
 
-      const response = await fetch(
-        "https://api.sheetbest.com/sheets/ca072f8a-5c8f-429e-96ca-853cecaa9626",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(dataToSend),
-        }
-      );
+      // Detectar ambiente e usar URL correta
+      const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+      const apiUrl = isProduction 
+        ? (import.meta.env.VITE_API_URL_PROD || "https://api-ewerton-mylene.vercel.app")
+        : (import.meta.env.VITE_API_URL || "http://localhost:5000");
+      
+      console.log('Enviando RSVP para:', apiUrl);
+      
+      const response = await fetch(`${apiUrl}/api/rsvps`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+      });
+
+      const responseData = await response.json();
 
       if (response.ok) {
         setIsSubmitted(true);
         toast.success("Presença confirmada com sucesso!");
       } else {
-        throw new Error("Erro ao enviar");
+        throw new Error(responseData.message || "Erro ao enviar");
       }
     } catch (error) {
       console.error("RSVP error:", error);
