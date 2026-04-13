@@ -19,10 +19,17 @@ const allowedOrigins = [
 
 const corsOptions = {
   origin: function (origin, callback) {
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+    // Em produção, aceita qualquer origem (será mais específico se necessário)
+    if (process.env.NODE_ENV === 'production') {
+      // Aceita qualquer origem em produção
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      // Em dev, valida a lista
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
     }
   },
   credentials: true,
