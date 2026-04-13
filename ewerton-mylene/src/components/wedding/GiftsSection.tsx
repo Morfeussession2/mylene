@@ -163,18 +163,13 @@ const GiftsSection = () => {
 
             {/* QR Code Placeholder */}
             <div className="bg-surface-medium p-6 text-center mb-6">
-              <div className="w-40 h-40 mx-auto mb-4 bg-foreground/10 flex items-center justify-center border border-border">
-                <span className="font-body text-xs text-muted-foreground">
-                  QR Code Pix
-                </span>
-              </div>
-              <p className="font-body text-sm text-muted-foreground">
+              <p className="font-body text-lg text-muted-foreground">
                 Chave Pix: 4be30297-5b6f-4a6e-897a-f6f93b20620a
               </p>
             </div>
 
             <p className="font-body text-xs text-muted-foreground text-center">
-              Escaneie o QR Code ou use a chave Pix acima para realizar sua
+              Use a chave Pix acima para realizar sua
               contribuição.
             </p>
           </div>
