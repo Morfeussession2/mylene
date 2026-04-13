@@ -65,7 +65,7 @@ const gifts = [
   },
   {
     id: 11,
-    name: "Taxa para jogar para buquê na sua direção",
+    name: "Taxa para jogar o buquê na sua direção",
     description: "Taxa para jogar o buquê na sua direção, aumentando suas chances de ser a próxima a casar e garantindo uma noite divertida e cheia de emoção.",
     value: "R$ 180",
   },
